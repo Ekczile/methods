@@ -11,7 +11,7 @@ end
 def my_store(hash_to_store)
     h = {}
     hash_to_store.each do |k, v|
-        h[k] << v
+         h[k] = v
     end
     return h
 end
