@@ -7,8 +7,10 @@ def to_an_array(*str)
 end
 
 def my_upcase(upcased)
-    up = " "
-    up << upcased
-    return up
+    s = ""
+    upcased.each_char do |v|
+        s << v.capitalize
+    end
+    return s
 end
  
